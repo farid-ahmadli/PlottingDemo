@@ -1,0 +1,14 @@
+INPUT(
+./release\Main.o
+./release\MainWindow.o
+./release\GraphWindow.o
+./release\GraphWidget.o
+./release\AddGraphDialog.o
+./release\TrackBall.o
+./release\BrowserWindow.o
+./release\moc_MainWindow.o
+./release\moc_GraphWindow.o
+./release\moc_GraphWidget.o
+./release\moc_AddGraphDialog.o
+./release\moc_BrowserWindow.o
+);

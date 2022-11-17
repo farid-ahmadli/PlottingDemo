@@ -1,0 +1,66 @@
+I am looking for an experienced C++ coder with experience with using QT to produce GUIs. Exposure or experience to QGLWidget, QtSVG and QtWebKit will be very useful.
+
+I am a C++ coder myself, with several years software architecture/coding experience. I do not have much GUI experience and so am looking for a QT expert to quickly put this project together - which I will then be able to learn from (as a working example), and then to extend for myself. it is essential therefore that you write clear, well structured and commented code for this project - nearing in mind that I will use it eventually, as a starting point for another project.
+
+The project essentially consists of:
+
+1. Developing a graph plotting library (I provide a skeleton header that describes the classes etc)
+
+2. An MDI demo application
+
+3. Child windows that demonstrate:
+(a). use of the graphing library developed in this project
+(b). display of a hardcoded url (e.g. google.com) in a Qt window
+
+
+
+REQUIREMENTS:
+
+
+#######################
+# Graphing Library    #
+#######################
+
+This library is responsible for plotting a graph (several modes available, please see baseline.h)
+Some datasets may have EITHER the X OR Y axis as dates. I have provided a baseline header file which helps explain the requirements.
+
+A top level overview of the requirements are:
+
+REQ-1.  Ploting data as a scatter plot
+REQ-2.  Ploting data as a line graph
+REQ-3.  Ploting data as a surface plot
+REQ-4.  Ploting data as a surface with contour plot 
+REQ-5.  All graphs above can show a title and legend etc (user can specifiy this to be on or off)
+REQ-6.  Ability to rotate the plotted data (only for surface plots)
+REQ-7.  Save graph as an image file (user specifies format - atleast, jpeg and/or png must be implemented)
+REQ-8.  Generate SVG from graph
+REQ-9.  Child window using scrollbar to scroll graph forward or backward (only valid for line graph)
+REQ-10. Child window must be able to right hand click to display a menu for zoom in/out
+
+Further details are available from baseline.h
+
+
+
+
+
+
+
+#######################
+# MDI Children        #
+#######################
+
+
+CHILD one
+---------
+This child does not use the graphing library, instead it is included simply to show how to display a web page in a QT window, by using the QtWebKit module *specifically, the QWebView class) to display a hardcoded html page (e.g. google.com). I believe there is an example project provided in the QT samples.
+
+
+CHILD two
+======================
+(a). This child involves using the graphing library to display a scatter plot. The user can interact with the graph (zoom in/out - i.e. all the generic functional requirements)
+
+(b). This child involves using the graphing library to display a line graph. The user can interact with the graph (e.g. scroll forward/back, zoom in/out etc - i.e. generic functional requirements + line graph specific reuirements)
+
+(c). This child involves using the graphing library to display a surface plot graph. The user can interact with the graph (e.g. zoom in/out, rotate plot etc - i.e. generic functional requirements + surface plot graph specific reuirements)
+
+(d). This child involves using the graphing library to display a surface plot with contour graph. The user can interact with the graph (e.g. zoom in/out, rotate plot etc - i.e. generic functional requirements + surface plot graph specific reuirements)
